@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Child\'s Health and Development</string>
+    <string name="title">Sign in as</string>
+    <string name="a">Enter Username</string>
+    <string name="b">Enter Password</string>
+    <string name="c">Re-Enter Password</string>
+    <string name="Parent" />
+    <string name="Doctor" />
+    <string name="parent">Parent</string>
+    <string name="doctor">Doctor</string>
+    <string name="sign_in">Sign in</string>
+</resources>
