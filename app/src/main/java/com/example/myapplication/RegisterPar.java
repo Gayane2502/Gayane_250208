@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
-public class Register extends AppCompatActivity {
+public class RegisterPar extends AppCompatActivity {
 
     TextInputEditText editTextEmail, editTextPassword, editTextConfirmPassword;
     Button buttonReg;
@@ -59,15 +59,15 @@ public class Register extends AppCompatActivity {
                 confirm_password = String.valueOf(editTextConfirmPassword.getText());
                 progressBar.setVisibility(View.GONE);
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(Register.this, "Enter email", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterPar.this, "Enter email", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(Register.this, "Enter password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterPar.this, "Enter password", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(confirm_password)) {
-                    Toast.makeText(Register.this, "Confirm password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterPar.this, "Confirm password", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -80,13 +80,13 @@ public class Register extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE);
                                 boolean equals = password.equals(confirm_password);
                                 if (task.isSuccessful() && (password.equals(confirm_password))) {
-                                    Toast.makeText(Register.this, "Account created.",
+                                    Toast.makeText(RegisterPar.this, "Account created.",
                                             Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(getApplicationContext(), DoctorDetails.class);
                                     startActivity(intent);
                                     finish();
                                 } else {
-                                    Toast.makeText(Register.this, "Authentication failed.",
+                                    Toast.makeText(RegisterPar.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
 
                                 }
@@ -97,6 +97,4 @@ public class Register extends AppCompatActivity {
         });
     }
 }
-
-
 

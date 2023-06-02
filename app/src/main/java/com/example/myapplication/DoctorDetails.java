@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class DoctorDetails extends AppCompatActivity {
 
+
     String[] item = {"Դավիդյանց պոլիկլինիկաներ", "Վան ստոմատոլոգիական պոլիկլինիկա", "№17 պոլիկլինիկա", "Արտաշիսյան մանկական պոլիկլինիկա", "Նորագավիթ պոլիկլինիկա"};
     AutoCompleteTextView autoCompleteTextView;
     ArrayAdapter<String> adapterItems;

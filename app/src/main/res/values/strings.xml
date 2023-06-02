@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Child\'s Health and Development</string>
-    <string name="parent">Parent</string>
-    <string name="doctor">Doctor</string>
+    <string name="parent">Parent 👨‍👩‍👦</string>
+    <string name="doctor">Doctor👩🏻‍⚕️ </string>
     <string name="have">Already have an account? Log in</string>
     <string name="title">Sign up as</string>
     <string name="a">Enter Username</string>
@@ -16,4 +16,6 @@
     <string name="log_out">Log out</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="emaild">Email</string>
+    <string name="doctor_registration">Doctor Registration 👩🏻‍⚕️</string>
+    <string name="parent_registration">Parent Registration 👨‍👩‍👦</string>
 </resources>
